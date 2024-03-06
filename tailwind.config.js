@@ -15,10 +15,23 @@ export default {
       red: "#DC3434",
       purple: "#B548C6",
       yellow: "#FF8700",
+      white: "#FFFFFF",
     },
     fontFamily: {
       Lumanosimo: ["'Lumanosimo', cursive"],
       Poppins: ["'Poppins',sans-serif"],
+    },
+
+    fontSize: {
+      xs: ["14px", "20px"],
+      sm: ["13px", "20px"],
+      base: ["16px", "24px"],
+      lg: ["18px", "20px"],
+      xl: ["20px", "30px"],
+      "2xl": ["25px", "35px"],
+      "3xl": ["30px", "35px"],
+      "4xl": "2.441rem",
+      "5xl": "3.052rem",
     },
     extend: {},
   },
