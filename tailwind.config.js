@@ -17,8 +17,8 @@ export default {
       yellow: "#FF8700",
     },
     fontFamily: {
-      Lumanosimo: "'Lumanosimo', cursive",
-      Poppins: "'Poppins',sans-serif",
+      Lumanosimo: ["'Lumanosimo', cursive"],
+      Poppins: ["'Poppins',sans-serif"],
     },
     extend: {},
   },
