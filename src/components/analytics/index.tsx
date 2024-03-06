@@ -9,7 +9,7 @@ import ChartMonth from "../chart";
 const Analytics = () => {
   return (
     <>
-      <div className=" pt-[60px] px-[100px]">
+      <div>
         <div className=" flex w-full items-start justify-between">
           <div>
             <h1 className="text-black text-4xl font-semibold tracking-wider	">
