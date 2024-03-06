@@ -1,5 +1,6 @@
 import React from "react";
 import { v4 } from "uuid";
+import clx from "../../../utils/clx";
 
 const sidebarItems = [
   {
@@ -33,7 +34,12 @@ const SidebarItems: React.FC = () => {
     <ul className="flex flex-col gap-[30px] mt-[117px] ">
       {sidebarItems.map((item) => {
         return (
-          <li className="text-2xl text-gray  font-semibold " key={v4()}>
+          <li
+            className={clx("text-2xl text-gray  font-semibold ", {
+              "text-white": item.label === "Expenses",
+            })}
+            key={v4()}
+          >
             {item?.label}
           </li>
         );

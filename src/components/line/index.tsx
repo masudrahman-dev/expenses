@@ -1,20 +1,57 @@
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
-import React from "react";
+import React, { ReactNode } from "react";
+import clx from "../../utils/clx";
 
-const Line = () => {
+const IconProvider = ({
+  children,
+  iconBgColor,
+}: {
+  children: ReactNode;
+  iconBgColor: string;
+}) => {
+  return (
+    <div
+      className={clx(
+        "bg-white rounded-full w-12 h-12  flex justify-center items-center",
+        iconBgColor
+      )}
+    >
+      {children}
+    </div>
+  );
+};
+
+interface LineProps {
+  iconBgColor: string;
+  label: string;
+  time: string;
+  place: string;
+  amount: string ;
+  icon: ReactNode;
+}
+const Line: React.FC<LineProps> = ({
+  amount,
+  time,
+  place,
+  iconBgColor,
+  label,
+  icon,
+}) => {
   return (
     <>
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-4">
-          <div className="bg-blue rounded-full w-12 h-12  flex justify-center items-center">
-            <ShoppingCartIcon className=" w-4 h-4 text-white " />
-          </div>
+          {icon && (
+            <IconProvider iconBgColor={iconBgColor}>{icon}</IconProvider>
+          )}
           <div>
-            <h3 className="text-lg">Grocery</h3>
-            <p className="text-xs pt-1 text-gray">5:12 pm • Belanja di pasar</p>
+            <h3 className="text-lg">{label}</h3>
+            <p className="text-xs pt-1 text-gray">
+              {time} • {place}
+            </p>
           </div>
         </div>
-        <h4 className="text-lg font-semibold">-326.800</h4>
+        <h4 className="text-lg font-semibold">-{amount ? amount : "00"}</h4>
       </div>
     </>
   );
