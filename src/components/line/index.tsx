@@ -11,7 +11,7 @@ const Line = () => {
           </div>
           <div>
             <h3 className="text-lg">Grocery</h3>
-            <p className="text-xs text-gray">5:12 pm • Belanja di pasar</p>
+            <p className="text-xs pt-1 text-gray">5:12 pm • Belanja di pasar</p>
           </div>
         </div>
         <h4 className="text-lg font-semibold">-326.800</h4>

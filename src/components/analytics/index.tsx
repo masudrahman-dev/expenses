@@ -5,6 +5,7 @@ import avatar2Img from "../../assets/avatar2.png";
 import avatar3Img from "../../assets/avatar3.png";
 import Avatar from "../avatar";
 import ChartMonth from "../chart";
+import Space from "../space";
 
 const Analytics = () => {
   return (
@@ -50,6 +51,7 @@ const Analytics = () => {
             </div>
           </div>
         </div>
+        <Space className="pt-[46px]" />
         <ChartMonth />
       </div>
     </>

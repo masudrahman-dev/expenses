@@ -12,8 +12,8 @@ const getMax = () => {
 const ChartMonth = () => {
   const [ref, { width }] = useMeasure();
   return (
-    <div ref={ref} className="mt-12">
-      <BarChart width={width} height={100} data={data} barSize={16}>
+    <div ref={ref}>
+      <BarChart width={width} height={60} data={data} barSize={16}>
         {/* <Tooltip /> */}
         <Bar dataKey="pv" fill="#8884d8">
           {data.map((entry, index) => {
