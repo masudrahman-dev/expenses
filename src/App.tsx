@@ -5,7 +5,7 @@ import avatar1Img from "../src/assets/avatar1.png";
 import avatar2Img from "../src/assets/avatar2.png";
 import avatar3Img from "../src/assets/avatar3.png";
 import Avatar from "./components/avatar";
-import { PlusIcon } from "@heroicons/react/24/solid";
+import ChartMonth from "./components/chart";
 
 const App = () => {
   return (
@@ -18,9 +18,9 @@ const App = () => {
         <div className=" rounded-[30px] w-full bg-white border grid grid-cols-1 gap-3 md:grid-cols-12">
           <div className=" md:col-span-9 w-full">
             <div className=" pt-[60px] px-[100px]">
-              <div className="border flex w-full items-start justify-between">
+              <div className=" flex w-full items-start justify-between">
                 <div>
-                  <h1 className="text-black text-4xl font-semibold">
+                  <h1 className="text-black text-4xl font-semibold tracking-wider	">
                     Expenses
                   </h1>
                   <p className="text-gray text-base pt-[10px]">
@@ -59,6 +59,9 @@ const App = () => {
                     </svg>
                   </div>
                 </div>
+              </div>
+              <div>
+                <ChartMonth />
               </div>
             </div>
           </div>
