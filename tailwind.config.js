@@ -16,7 +16,10 @@ export default {
       purple: "#B548C6",
       yellow: "#FF8700",
     },
-
+    fontFamily: {
+      Lumanosimo: "'Lumanosimo', cursive",
+      Poppins: "'Poppins',sans-serif",
+    },
     extend: {},
   },
   plugins: [],
