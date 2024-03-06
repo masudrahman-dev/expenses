@@ -31,7 +31,7 @@ const sidebarItems = [
 
 const SidebarItems: React.FC = () => {
   return (
-    <ul className="flex flex-col gap-[30px] mt-[117px] ">
+    <ul className="flex flex-col gap-[30px] md:mt-[117px] mt-12 items-center md:items-start ">
       {sidebarItems.map((item) => {
         return (
           <li

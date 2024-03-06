@@ -11,10 +11,8 @@ import {
 import Line from "./components/line";
 import Space from "./components/space";
 import BusIcon from "./components/icons/bus-icon";
-import ProgressBar from "./components/progress-bar";
 
-import saveImg from "../src/assets/save.png";
-import treeImg from "../src/assets/tree.png";
+import SidebarRight from "./components/sidebar-right";
 
 interface TitleProps {
   title: string;
@@ -40,11 +38,13 @@ const Title: React.FC<TitleProps> = ({ title }) => {
 
 const App = () => {
   return (
-    <div className="px-5 pt-5 bg-black w-full h-screen">
-      <div className="flex">
+    <div className="  bg-black md:h-screen ">
+      <div className="flex flex-col md:flex-row px-5 pt-5 w-full max-w-[1440px] mx-auto ">
         <Sidebar />
+          <Space className="pt-12 md:pt-0"/>
         <div className=" rounded-[30px] w-full bg-white  grid grid-cols-1 gap-3 md:grid-cols-12">
-          <div className=" md:col-span-9 w-full py-[60px] h-full  px-[100px] ">
+          
+          <div className=" md:col-span-8 w-full md:py-[60px] p-4 h-full  md:px-[100px] ">
             <div className="">
               <Analytics />
               <div>
@@ -105,56 +105,9 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className=" md:col-span-3 w-full border-l px-[50px]">
-            <Space className="pt-[76px]" />
-            <h1 className="text-xl text-black font-semibold text-center">
-              Where your money go?
-            </h1>
-            <Space className="pt-[30px]" />
 
-            <div className="flex flex-col gap-[30px]">
-              <ProgressBar
-                label="Food and Drinks"
-                amount="872.400"
-                parent={30}
-              />
-              <ProgressBar label="Shopping" amount="1.378.200" parent={30} />
-              <ProgressBar label="Housing" amount="928.500" parent={30} />
-              <ProgressBar
-                label="Transportation"
-                amount="420.700"
-                parent={30}
-              />
-              <ProgressBar label="Vehicle" amount="520.000" parent={30} />
-            </div>
-            <Space className="pt-[86px]" />
-            <div className="px-[25px] pb-[25px] relative  bg-blue-light rounded-xl ">
-              <img
-                className="w-[84.15px] h-[72.43px] absolute  -top-6 left-6  "
-                src={saveImg}
-                alt="save money"
-              />
-              <img
-                className="w-[52.53px] h-[90.12px] absolute  -top-10 right-6"
-                src={treeImg}
-                alt="save money tree"
-              />
-
-              <Space className="pt-[70px]" />
-              <div>
-                <h6 className="text-base font-semibold text-center pb-1">
-                  Save more money
-                </h6>
-                <p className="text-xs leading-6 text-gray text-balance pb-5">
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim.
-                </p>
-
-                <button className="block rounded-lg bg-black px-[62px]  py-[14px] text-white text-xs ">
-                  VIEW TIPS
-                </button>
-              </div>
-            </div>
+          <div className="md:col-span-4 w-full">
+            <SidebarRight />
           </div>
         </div>
       </div>
