@@ -3,7 +3,7 @@ import profileImg from "../../assets/profile.png";
 
 const Profile: React.FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center md:flex-row md:justify-start md:items-start">
+    <div className="flex flex-col justify-center items-center  md:justify-start md:items-start">
       <div className="relative w-[72px] h-[72px]">
         <img className=" w-full rounded-xl" src={profileImg} alt="profile" />
         <div className="w-2 h-2 bg-red p-3 flex justify-center items-center rounded-full absolute -top-2 -right-2 ">

@@ -106,7 +106,7 @@ const App = () => {
             </div>
           </div>
 
-          <div className="md:col-span-4 w-full">
+          <div className="md:col-span-4 max-w-[350px] border">
             <SidebarRight />
           </div>
         </div>
