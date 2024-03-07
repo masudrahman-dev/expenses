@@ -12,7 +12,7 @@ const Analytics = () => {
     <>
       <div className=" flex w-full items-start justify-between">
         <div>
-          <h1 className="text-black md:text-4xl text-2xl font-semibold tracking-wider	">
+          <h1 className="text-black lg:text-4xl text-2xl font-semibold tracking-wider	">
             Expenses
           </h1>
           <p className="text-gray text-base pt-[10px]">01 - 25 March, 2020</p>

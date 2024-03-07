@@ -39,19 +39,19 @@ const Line: React.FC<LineProps> = ({
 }) => {
   return (
     <>
-      <div className="flex items-start justify-between">
+      <div className="flex items-start justify-between ">
         <div className="flex items-center gap-4">
           {icon && (
             <IconProvider iconBgColor={iconBgColor}>{icon}</IconProvider>
           )}
           <div>
-            <h3 className="text-lg">{label}</h3>
+            <h3 className="lg:text-lg text-base">{label}</h3>
             <p className="text-xs pt-1 text-gray">
               {time} • {place}
             </p>
           </div>
         </div>
-        <h4 className="text-lg font-semibold">-{amount ? amount : "00"}</h4>
+        <h4 className="font-semibold lg:text-lg text-base">-{amount ? amount : "00"}</h4>
       </div>
     </>
   );

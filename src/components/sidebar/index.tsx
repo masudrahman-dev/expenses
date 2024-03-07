@@ -5,7 +5,7 @@ import SidebarItems from "./sidebar-items";
 const Sidebar = () => {
   return (
     <>
-      <div className="md:px-20 md:pt-20  text-white">
+      <div className="lg:px-20 lg:pt-20  text-white">
         <Profile />
         <SidebarItems />
       </div>

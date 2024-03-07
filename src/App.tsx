@@ -13,37 +13,16 @@ import Space from "./components/space";
 import BusIcon from "./components/icons/bus-icon";
 
 import SidebarRight from "./components/sidebar-right";
-
-interface TitleProps {
-  title: string;
-}
-
-const Title: React.FC<TitleProps> = ({ title }) => {
-  return (
-    <>
-      <div
-        className="flex items-center  justify-between border-b-gray-light 
-       border-b-2 pb-3"
-      >
-        <h2 className="text-lg">{title}</h2>
-        <button className=" inline-flex gap-1 text-gray-light" type="button">
-          <div className="w-2 h-2 block bg-blue-light rounded-full"></div>
-          <div className="w-2 h-2 block bg-blue-light rounded-full"></div>
-          <div className="w-2 h-2 block bg-blue-light rounded-full"></div>
-        </button>
-      </div>
-    </>
-  );
-};
+import Title from "./components/title";
 
 const App = () => {
   return (
-    <div className="  bg-black h-screen ">
-      <div className="flex flex-col  md:flex-row px-5 pt-5 w-full max-w-[1440px] mx-auto ">
+    <div className="   bg-black lg:h-screen ">
+      <div className="flex flex-col   lg:flex-row w-full lg:w-[1440px] mx-auto  pt-4 px-4 ">
         <Sidebar />
-        <Space className="pt-12 md:pt-0" />
-        <div className="  flex rounded-[30px]  w-[1060px] h-[860px] border border-yellow justify-between bg-white  ">
-          <div className=" w-full    md:pt-[60px] p-4   md:px-[100px] ">
+        <Space className="pt-12 lg:pt-0" />
+        <div className=" grid lg:grid-cols-12 grid-cols-1 pb-4 lg:pb-0 rounded-[30px] bg-white lg:min-w-[1060px] lg:h-[860px]  ">
+          <div className="lg:col-span-8 gap-4  lg:pt-[60px] lg:px-[100px] pt-4 px-4 ">
             <Analytics />
             <div>
               <Space className="pt-[47px]" />
@@ -119,7 +98,7 @@ const App = () => {
                 />
               </div>
             </div>
-            <main>
+            <div className=" ">
               <Space className="pt-[59px]" />
               <Title title="Monday, 23 March 2020" />
               <Space className="pb-[24px]" />
@@ -165,12 +144,11 @@ const App = () => {
                   icon={<PlayCircleIcon className=" w-4 h-4 text-white " />}
                 />
               </div>
-            </main>
+            </div>
           </div>
-          <div className="  min-w-[350px] ">
             <SidebarRight />
-          </div>
         </div>
+        <Space className="h-12 " />
       </div>
     </div>
   );

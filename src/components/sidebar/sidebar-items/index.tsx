@@ -31,13 +31,16 @@ const sidebarItems = [
 
 const SidebarItems: React.FC = () => {
   return (
-    <ul className="flex flex-col gap-[30px] md:mt-[117px] mt-12 items-center md:items-start ">
+    <ul className="flex flex-col lg:gap-[30px] gap-[20px] lg:mt-[117px] mt-12 items-center lg:items-start ">
       {sidebarItems.map((item) => {
         return (
           <li
-            className={clx("text-2xl text-gray  font-semibold hover:text-white ", {
-              "text-white": item.label === "Expenses",
-            })}
+            className={clx(
+              "lg:text-2xl text-xl text-gray  font-semibold hover:text-white ",
+              {
+                "text-white": item.label === "Expenses",
+              }
+            )}
             key={v4()}
           >
             {item?.label}

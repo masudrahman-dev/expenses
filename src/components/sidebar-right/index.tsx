@@ -5,8 +5,8 @@ import SaveCard from "../save-card";
 
 const SidebarRight = () => {
   return (
-    <div className=" bg-[#F9FAFC] md:px-[50px] h-full px-4 rounded-r-[30px] ">
-      <Space className="md:pt-[76px] pt-10" />
+    <div className=" bg-[#F9FAFC] lg:px-[50px] h-full px-4 rounded-[30px] lg:w-[350px]  ">
+      <Space className="lg:pt-[76px] pt-10" />
       <h1 className="text-xl text-black font-semibold text-center">
         Where your money go?
       </h1>
@@ -21,8 +21,6 @@ const SidebarRight = () => {
       </div>
       <Space className="pt-[86px]" />
       <SaveCard />
-
-      <Space className="pt-[70px] md:pt-0" />
     </div>
   );
 };

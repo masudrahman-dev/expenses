@@ -18,10 +18,10 @@ const SaveCard = () => {
 
       <Space className="pt-[60px]" />
       <div className="">
-        <h6 className="text-base font-semibold text-center md:text-start pb-1">
+        <h6 className="text-base font-semibold text-center lg:text-start pb-1">
           Save more money
         </h6>
-        <p className="text-xs leading-6 text-gray text-center md:text-start text-balance pb-5">
+        <p className="text-xs leading-6 text-gray text-center lg:text-start text-balance pb-5">
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim.
         </p>
