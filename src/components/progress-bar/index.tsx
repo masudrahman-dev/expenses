@@ -16,7 +16,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({
         <p className="text-xs text-gray">{amount ? amount : "00"}</p>
       </div>
       <div className="relative">
-        <div className="h-[5px] bg-blue-light"></div>
+        <div className="h-[5px] bg-blue-light rounded-full"></div>
         <div
           style={{ width: `${parent}%` }}
           className="h-[5px] absolute  inset-0 bg-green rounded-full"

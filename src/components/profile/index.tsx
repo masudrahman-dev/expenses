@@ -12,7 +12,7 @@ const Profile: React.FC = () => {
       </div>
       <div className="mt-5">
         <h1 className="text-3xl font-bold">Samantha</h1>
-        <p className="text-gray">samantha@email.com</p>
+        <p className="text-gray hover:text-white">samantha@email.com</p>
       </div>
     </div>
   );

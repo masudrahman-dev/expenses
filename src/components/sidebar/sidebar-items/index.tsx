@@ -35,7 +35,7 @@ const SidebarItems: React.FC = () => {
       {sidebarItems.map((item) => {
         return (
           <li
-            className={clx("text-2xl text-gray  font-semibold ", {
+            className={clx("text-2xl text-gray  font-semibold hover:text-white ", {
               "text-white": item.label === "Expenses",
             })}
             key={v4()}
